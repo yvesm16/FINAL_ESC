@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+#login{
+    background-image: url('../images/backgrounds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 300px;
+    height: 300px;
+}
+
+/**login boxes**/
+#divlog{    
+    align-items: center;
+    background-color: white;
+    width: 550px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+#loginform{
+    width: 550px;
+    height: 900px;
+    margin: auto;
+    position: relative;
+   }
+
+#loginlabel {
+    width: 120px;
+    height: 25px;
+    padding: 12px;
+    margin-top:5px;
+    display: inline-block;   
+}
+
+#logininput {
+    width: 300px;
+    height: 25px;
+    margin-top:10px;
+    display: inline-block;   
+}
+
+a:link#loginbutton {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited#loginbutton {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+/**login button**/
+.login-btn{
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    font-family: 'Montserrat';
+    font-weight: 550;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid gray;
+}
+.login-btn:hover{
+    background-color: #ed765e;
+    color: white;
+    border: 1px none;
+    transition-duration: 0.6s;
+}
+
+
+/**Main Menu Page**/
+:root{
+    box-sizing: border-box;
+
+    --primary: #808080;
+    --hover-color:#e70146;
+    --dark:#1c2022;
+    --light:#fff; 
+
+    --header-bg:var(--primary);
+}
+
+::after, ::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/*#mainmenu{
+    font-family: "Montserrat";
+    font-size: 14px;
+} */
+
+header{
+    background: var(--header-bg);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+ 
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+/**Media Queries**/
+@media screen and (max-width: 768px) {
+    #divlog{
+        width: 405px;
+    height: 410px;
+        position: absolute;
+        top: auto;
+        left: 22.5%;
+    }
+
+    #loginform{
+        width: 450px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        font-size: 2px;
+       }
+
+    #loginlabel {
+        width: 80px;
+        height: 25px;
+        padding: 5px;
+        margin-top:5px;
+        display: inline-block;   
+    }
+    
+    #logininput {
+        width: 200px;
+        height: 25px;
+        margin-top:1px;
+        margin-right: 10px;
+        display: inline-block;   
+        
+    }
+    .login-btn{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #divlog{
+        width: 305px;
+    height: 530px;
+        position: absolute;
+        top: auto;
+        left: 9%;
+    }
+
+    #loginform{
+        width: 350px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        font-size: 2px;
+       }
+
+    #loginlabel {
+        width: 75px;
+        height: 25px;
+        padding: 5px;
+        margin-top:5px;
+        display: inline-block;   
+    }
+    
+    #logininput {
+        width: 200px;
+        height: 25px;
+        margin-top:1px;
+        margin-right: 10px;
+        display: inline-block;   
+        align-content: left;
+    }
+    .login-btn{
+        margin-left: 5px;
+
+    }
+    #regbutton{
+        margin-top: 3px;
+    }
+}
+    @media screen and (max-width: 375px) {
+        #divlog{
+            width: 305px;
+        height: 530px;
+            position: absolute;
+            top: auto;
+            left: 4%;
+            
+        }
+    
+        #loginform{
+            width: 350px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            font-size: 2px;
+           }
+    
+        #loginlabel {
+            width: 80px;
+            height: 25px;
+            padding: 5px;
+            margin-top:5px;
+            display: inline-block;   
+        }
+        
+        #logininput {
+            width: 200px;
+            height: 25px;
+            margin-top:1px;
+            margin-right: 10px;
+            display: inline-block;   
+            align-content: left;
+        }
+    .login-btn{
+        margin-left: 5px;
+    }
+        @media screen and (max-width: 360px) {
+            #divlog{
+                width: 305px;
+            height: 500px;
+                position: absolute;
+                top: auto;
+                left: 2.5%;
+            }
+        
+            #loginform{
+                width: 350px;
+                height: 300px;
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                font-size: 2px;
+               }
+        
+            #loginlabel {
+                width: 80px;
+                height: 25px;
+                padding: 5px;
+                margin-top:5px;
+                display: inline-block;   
+                text-align: left;
+            }
+            
+            #logininput {
+                width: 200px;
+                height: 25px;
+                margin-top:1px;
+                margin-right: 10px;
+                display: inline-block;   
+                align-content: left;
+            }
+        
+            .login-btn{
+                margin-left: 5px;
+    
+}
+    }
+}
