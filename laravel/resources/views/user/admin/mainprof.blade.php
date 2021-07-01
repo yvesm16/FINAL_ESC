@@ -1,1 +1,3 @@
-PROFESSOR'S VIEW
+//PROFESSOR'S VIEW
+@extends('layouts.headerprof')
+@extends('user.mainmenu')

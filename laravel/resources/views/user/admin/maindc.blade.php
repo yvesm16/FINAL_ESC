@@ -1,1 +1,3 @@
-DEPARTMENT CHAIR'S VIEW
+//DEPARTMENT CHAIR'S VIEW
+@extends('layouts.headerprof')
+@extends('user.mainmenu')

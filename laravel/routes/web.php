@@ -40,3 +40,27 @@ Route::get('/forgotpassword', function () {
 Route::get('/main', function () {
     return view('/user/mainmenu');
 });
+
+Route::get('/student', function () {
+    return view('/user/student/mainstudent');
+});
+
+Route::get('/prof', function () {
+    return view('/user/admin/mainprof');
+});
+
+Route::get('/director', function () {
+    return view('/user/admin/maindirector');
+});
+
+Route::get('/department chair', function () {
+    return view('/user/admin/maindc');
+});
+
+Route::get('/secretary', function () {
+    return view('/user/admin/mainsec');
+});
+
+Route::get('/registrar', function () {
+    return view('/user/admin/mainregistrar');
+});

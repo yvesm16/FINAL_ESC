@@ -143,17 +143,26 @@ class RegisterController extends Controller
             if($user) {
                 if(Hash::check($password, $user->password)){
                     if($user->isVer == 1){
-                        $role = $user->role;
+                        $role = $user->ROLE;
                         switch($role) {
                             case 'student':
-                                return '/views/user/student/student?role=' . $role . '' .'email='. $user->email;
+                                return redirect('student');
+                                break;
+                            case 'professor':
+                                return redirect('prof');
                                 break;
                             case 'department chair':
-                                return '/views/user/admin/maindc' . $role . '' .'email='. $user->email;
-                                break;
+                                return redirect('department chair');
+                                    break;
                             case 'director':
-                                return '/views/user/admin/maindirector' . $role . '' .'email='. $user->email;
+                                return redirect('director');
                                 break;
+                            case 'secretary':
+                                return redirect('secretary');
+                                break;
+                            case 'registrar':
+                                    return redirect('registrar');
+                                    break;
                             default: 
                                 return '/views/user/admin/mainprof'  . $role . '' .'email='. $user->emaill;
                         }

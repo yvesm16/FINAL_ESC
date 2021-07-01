@@ -47,7 +47,7 @@
         </form>
     
     
-        <a href="../frontend/login.html" id="logoutbutton" style="font-family:'Montserrat'; font-size: 16px; color:white">
+        <a href="login" id="logoutbutton" style="font-family:'Montserrat'; font-size: 16px; color:white">
           Logout</a>
     
     
